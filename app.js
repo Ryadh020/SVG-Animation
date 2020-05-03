@@ -1,18 +1,17 @@
-const elipse1 = document.getElementById("path45");
+  // shapes :
+const elipse1 = document.getElementById("path47");
 
 
-
+  // initial function:
 (()=> {
 
   setInterval(() => {
 
-    elipse1.setAttribute("rx", "487.14285")
-    elipse1.setAttribute("ry", "478.57144")
+    elipse1.setAttribute("d", "m 20.000007,517.14285 c 0,0 525.714283,-179.99999 802.857133,-88.57142 C 1100.0001,520 1017.1429,522.85714 1351.4286,614.28571 1685.7143,705.71428 1814.2857,691.42857 1877.1429,700")
 
     setTimeout(() => {
 
-      elipse1.setAttribute("rx", "287.14285")
-      elipse1.setAttribute("ry", "278.57144")
+      elipse1.setAttribute("d", "m 102.85715,454.28571 c 0,0 431.42857,-82.85714 708.57142,8.57143 277.14293,91.42857 151.42859,68.57143 485.71433,160 334.2857,91.42857 428.5714,111.42857 491.4286,120")
 
     }, 2000);
 
