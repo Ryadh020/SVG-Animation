@@ -9,3 +9,22 @@ body {
 
     margin: 0;
 }
+
+main {
+    width: 50%;
+    height: 50%;
+}
+
+.bar {
+    flex: 1;
+    justify-content: flex-end;  
+
+    border-bottom: 1px gray solid; 
+}
+.balls {
+    flex: 9;
+    justify-content: center;
+}
+.baal {
+    flex: 1;
+}
