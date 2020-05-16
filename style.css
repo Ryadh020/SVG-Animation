@@ -57,3 +57,42 @@ main {
     transform-origin: top;
     transition: 500ms all ease;
 }
+
+/* buttons */
+footer {
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#increase, #decrease {
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+#increase:hover, #decrease:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#randomColor {
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+#randomColor:hover {
+    background-color: rgb(255, 255, 255);
+}
+#start {
+    height: 45px;
+    width: 120px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+#start:hover {
+    background-color: rgb(255, 255, 255);
+}

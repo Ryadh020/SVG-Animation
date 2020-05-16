@@ -27,8 +27,9 @@ increaseSize.addEventListener("click", ()=> {
   if(size <= 9) {
     size++ 
     fill()
+    decreaseSize.style.color = "black";
   } else {
-    console.log("error");
+    increaseSize.style.color = "rgb(218, 218, 218)";
   }
 })
 
@@ -36,8 +37,9 @@ decreaseSize.addEventListener("click", ()=> {
   if(size >= 2) {
     size--
     fill()
+    increaseSize.style.color = "black";
   } else {
-    console.log("error");
+    decreaseSize.style.color = "rgb(218, 218, 218)";
   }
 })
 
@@ -77,6 +79,7 @@ const fill = ()=> {
 /* start game function */
 const startGame = ()=> {
   // disable the button
+  startButton.disabled = true;
   setInterval(() => {
 
     leftBall.style.transform = "rotate(10deg)"
