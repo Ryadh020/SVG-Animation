@@ -1,5 +1,5 @@
 * {
-    /*outline: 1px red solid;*/
+    outline: 0.2px red solid;
     box-sizing: border-box;
 }
 body {
@@ -9,22 +9,36 @@ body {
 
     margin: 0;
 }
-
 main {
-    width: 50%;
-    height: 50%;
+    height: 300px;
+    width: 350px;
 }
 
+/* the holder of robes*/
 .bar {
-    flex: 1;
-    justify-content: flex-end;  
-
-    border-bottom: 1px gray solid; 
+    height: 5px;
 }
+/* the balancers  holder*/
 .balls {
-    flex: 9;
+    height: 295px;
     justify-content: center;
 }
-.baal {
-    flex: 1;
+
+/* individual robes and balls */
+.raw {
+    width: 30px;
+    border-top: 1px black solid;
+}
+.robe {
+    height: 265px;
+    margin: 0px 14.5px;
+
+    background-color: rgb(59, 59, 59);
+}
+.ball {
+    width: 30px;
+    height: 30px;
+
+    background-color: rgb(150, 150, 150);
+    border-radius: 50%;
 }
