@@ -1,22 +1,27 @@
 * {
-    outline: 0.2px red solid;
+    /*outline: 0.2px red solid;*/
     box-sizing: border-box;
 }
 body {
     width: 100%;
     height: 100vh;
     padding: 15px 20px;
-
     margin: 0;
+
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;
 }
 main {
     height: 300px;
-    width: 350px;
+    width: 100%;
 }
 
 /* the holder of robes*/
 .bar {
     height: 5px;
+    border-bottom: 1px rgb(255, 255, 255) solid;
 }
 /* the balancers  holder*/
 .balls {
@@ -27,18 +32,28 @@ main {
 /* individual robes and balls */
 .raw {
     width: 30px;
-    border-top: 1px black solid;
 }
 .robe {
     height: 265px;
     margin: 0px 14.5px;
 
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(255, 255, 255);
 }
 .ball {
     width: 30px;
     height: 30px;
 
-    background-color: rgb(150, 150, 150);
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
     border-radius: 50%;
+}
+#left {
+    transform: rotate(0deg);
+    transform-origin: top;
+    transition: 500ms all ease;
+}
+
+#right {
+    transform: rotate(0deg);
+    transform-origin: top;
+    transition: 500ms all ease;
 }
